@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    background-color: black;
+    font-family: Montserrat;
+    color: white;
+}
+
+/* Ensure the container takes the full height of the section */
+.container {
+    display: flex;
+    flex-direction: column; /*Stacks elements vertically */
+    justify-content: space-between; /* Space items apart, ensuring copyright stays at the bottom */
+    align-items: center; /*Center horizontally */
+    height: 100vh; /* Full height of the viewport or section */
+    padding: 20px; /* Adds 20px space between the logo and the CTA */
+    box-sizing: border-box;
+}
+
+/* Styling for individual elements */
+.logo {
+   margin-top: auto; /* Pushes the logo towards the center from the top */
+   margin-bottom: 10px; /* Adds 20px space between the logo and the CTA */
+}
+
+.cta {
+    color: #FFF;
+    width: 300px;
+text-align: center;
+font-family: Montserrat;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    margin-bottom: 10px; /* Adds 10px space between the CTA and the email-form */
+}
+
+.email-form {
+    margin-bottom: auto; /* Pushes the email form slightly towards the bottom */
+  }
+  
+  .copyright {
+    text-align: center;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0; /* Ensures copyright stays at the bottom */
+  }
+
+/* Email input styling */
+.email-input {
+    width: 100%; /* Full width */
+    padding: 12px 20px; /* Padding inside the input */
+    margin: 8px 0; /* Spacing around the input */
+    display: block;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 50px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Includes padding and border in width calculation */
+    font-size: 10px; /* Text size */
+  }
+  
+  /* Styling for the submit button */
+  .submit-btn {
+    background-color: #ffffff; /* Green background */
+    color: black; /* White text */
+    padding: 12px 20px; /* Padding inside the button */
+    font-size: 10px; /* Text size */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+    width: 70%; /* Full width button */
+
+    /* Center the button */
+  margin: 10px auto; /* Auto margins on left and right will center it */
+  display: block; /* Ensure it's treated as a block element for centering */
+  }
+
+  
+  /* Hover effect for the button */
+  .submit-btn:hover {
+    background-color: #aaaaaa; /* Darker green on hover */
+    transform: scale(1.03); /* Slight increase in size on hover */
+  }
+  
+  /* Active state when button is pressed */
+  .submit-btn:active {
+    background-color: #777777; /* Darkest green on click */
+    transform: scale(1); /* Back to original size */
+  }
+  
+  /* Focus state when the button is focused (keyboard or mouse) */
+  .submit-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add shadow to indicate focus */
+  }
